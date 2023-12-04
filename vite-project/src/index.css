@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+
+:root {
+  /*Tipografías*/
+  --base-font: "Inter", Helvetica, Arial, sans-serif;
+  --alternative-font: "Raleway", Helvetica, Arial, sans-serif;
+
+  /*Tamaños de fuente*/
+  --font-large: 3.6rem;
+  --font-medium: 2.2rem;
+  --font-small: 1.4rem;
+
+  /*Colores*/
+  --primary-solid: rgb(255, 255, 255);
+  --dark-solid: #1f1f1f;
+  --light-solid: #f1f1f1;
+  --light-bg: #f333;
+
+  /*Espaciados*/
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+  --spacing-4: 0.4rem;
+
+  font-family: var(--base-font);
+  font-size: 0.66rem;
+  color: var(--dark-solid);
+  line-height: 1.5;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 500px;
+  min-height: 50vh;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: var(--font-large);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: var(--spacing-15);
+  padding-bottom: var(--spacing-15);
+}
+
+.subtitle {
+  font-family: var(--alternative-font);
+  font-size: var(--font-medium);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-8);
+  border-bottom: 5px solid var(--primary-solid);
+}
+
+.span-color {
+  color: black;
+}
+
+.container {
+  background-color: black;
+  padding: 0 var(--spacing-12) var(--spacing-16);
+}
+
+.counters {
+  margin-top: var(--spacing-24);
+}
+
+.btn {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: var(--dark-solid);
+  transition: background 0.4s ease-in-out;
+  font-size: var(--font-medium);
+  text-align: center;
+  padding: var(--spacing-4) var(--spacing-16);
+  margin: var(--spacing-8) 0 var(--spacing-8) var(--spacing-4);
+  border-style: none;
+}
+
+.btn:hover {
+  background-color: var(--primary-solid);
+}
+
+input {
+  padding: var(--spacing-8);
+  font-size: var(--font-small);
+  border: none;
+  outline: none;
+}
+
+.task-list,
+p {
+  font-size: var(--font-small);
+  letter-spacing: 1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+}
+
+.task-list {
+  list-style-position: inside;
+}
+
+p {
+  font-weight: 700;
+}
+
+.task-list div,
+.task-form {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: var(--spacing-4) 0;
+  align-items: center;
+}
+
+.task-list div {
+  border-bottom: 1px solid var(--primary-solid);
+}
